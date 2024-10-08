@@ -1,0 +1,5 @@
+export default function getListStudentIds(objArray = []) {
+    return objArray.map(function(obj) {
+	return obj.id
+    });
+}
