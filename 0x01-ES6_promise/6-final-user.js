@@ -8,7 +8,7 @@ export default function hadleProfileSignup(firstName, lastName, fileName) {
 	if (result.status === 'fulfilled') {
 	  return {status: result.status, value: result.value}
 	} else {
-	  return {status: result.status, reason: result.reason}
+	  return {status: result.status, value: result.reason}
 	}
       });
     });
